@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="18dp"
+            app:strokeColor="#888888"
+            app:strokeWidth="2dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Фото профиля -->
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="Фото профиля"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <!-- ФИО -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/profileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Иван Иванов"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_bold" />
+
+                <!-- ID -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID:"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:paddingStart="20dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/profileId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:minHeight="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="22B07777"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="@drawable/outline_box"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:paddingStart="20dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="outline"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxStrokeColor="#4A148C"
+                    app:boxCornerRadiusTopStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profileEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:minHeight="40dp"
+                        android:paddingVertical="4dp"
+                        android:text="test@example.com"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="14sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Телефон -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Номер телефона:"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:paddingStart="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="outline"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxStrokeColor="#4A148C"
+                    app:boxCornerRadiusTopStart="16dp"
+                    app:boxCornerRadiusTopEnd="16dp"
+                    app:boxCornerRadiusBottomStart="16dp"
+                    app:boxCornerRadiusBottomEnd="16dp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profilePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:minHeight="40dp"
+                        android:paddingVertical="4dp"
+                        android:text="+7 777 123 45 67"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="14sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Пароль -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Пароль:"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="6dp"
+                    android:paddingStart="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/changePasswordButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Изменить"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    app:backgroundTint="#000000"
+                    app:cornerRadius="16dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/saveProfileButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Сохранить изменения"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_bold"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="#4A148C"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="8dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

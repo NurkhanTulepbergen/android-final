@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="6dp"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFinanceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Коммунальные услуги"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvFinanceDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="До 25 октября"
+            android:layout_marginTop="4dp"
+            android:textColor="#88000000" />
+
+        <TextView
+            android:id="@+id/tvFinanceAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сумма: ₽0"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFinanceStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статус: На рассмотрении"
+            android:layout_marginTop="6dp"
+            android:textColor="#1E88E5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMarkPaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="Отметить как оплачено"
+            android:visibility="gone" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

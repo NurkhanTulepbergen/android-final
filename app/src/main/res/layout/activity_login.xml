@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:contentDescription="Логотип"
+            android:src="@drawable/dms1" />
+
+        <!-- Email Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#120173"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"/>
+
+        <!-- Email Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxStrokeColor="#4A148C"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your email"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#120173"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Password Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxStrokeColor="#4A148C"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center_vertical"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:paddingTop="15dp"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Spacer -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot your password?"
+            android:textColor="#1C1CD4"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_italic"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="100dp" />
+
+        <!-- Sign in Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign in"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#120173"
+/>
+
+    </LinearLayout>
+
+</ScrollView>
